@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        body{
             background: rgb(160, 160, 160);
         }
         .main_container{
+            background-color: #fff;
             border:3px solid black;
+            height:500px;
+        }
+        .imagecontainer{
+            width:50%;
+
         }
         .imagecontainer>img {
             height: 400px;
+            float: left;
         }
+
+        .content{
+            width:50%;
+        }
+
     </style>
 </head>
 <body>
     <div class="main_container">
-        <div class="imagecontainer">
+        <div class="hgt" style="font-size:2em"><h1>This is a float prac</h1></div>
+
+        <div class="imagecontainer" style="border:1px solid">
             <img src="../img/css.png" alt="">
         </div>
 
-        <div></div>
+        <div class="content"><p style="font-size:1.5em;border:1px solid">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptate cumque est beatae laborum perferendis alias, mollitia totam quis recusandae ex corporis omnis minima sapiente quo nam hic a, delectus aliquam ullam eaque deserunt qui veritatis? Necessitatibus ipsam ipsa, at tempore a, pariatur sequi cum aut facilis esse provident velit.
+        </p></div>
     </div>
 </body>
 </html>
