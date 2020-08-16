@@ -13,6 +13,7 @@
 
         body {
             /* width:100%; */
+            font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
             margin: 0px 10px 20px 13px;
             /* box-shadow: 0 0; */
         }
@@ -183,33 +184,58 @@
             text-align: center;
         }
 
-        .card1 {
-            margin: 32px 5px 0px 272px;
-            background-color: rgb(202, 82, 12);
-            height: 200px;
-            width: 150px;
+        .card {
+            border: none;
+            border-radius: 12px;
+            background-color: #fff;
             display: inline-block;
+            width: 264px;
+            height: 440px;
+            padding: 20px;
+            margin: 0px 34px;
+            position: relative;
+            top: 68px;
+            box-shadow: 2px 3px 6px 0px;
         }
-        .card2 {
-            margin: 32px 5px 0px 84px;
-            background-color: rgb(194, 79, 13);
-            height: 200px;
-            width: 150px;
-            display: inline-block;
+
+        .image {
+            text-align: center;
+            position: relative;
+            top: 8px;
         }
-        .card3 {
-            margin: 32px 5px 0px 84px;
-            background-color: rgb(194, 79, 13);
-            height: 200px;
-            width: 150px;
-            display: inline-block;
+
+        .card>p {
+            margin: 0;
+            padding: inherit;
+            font-size: 0.91em;
         }
-        .card4 {
-            margin: 32px 5px 0px 84px;
-            background-color: rgb(194, 79, 13);
-            height: 200px;
-            width: 150px;
-            display: inline-block;
+
+        .card>.btn {
+            border: none;
+            width:262px;
+            height:44px;
+            background-color: red;
+            border-radius: 8px;
+            position: relative;
+            top: -3px;
+            color: white;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            outline:none;
+            font-size:1em;
+        }
+
+        .card>.btn:hover {
+            background-color: rgb(221, 0, 0);
+        }
+
+        .card>.btn:active{
+            border:none;
+        }
+
+        .card>.btn>a{
+            color: white;
+            text-decoration: none;
         }
 
         .sec4 {
@@ -268,10 +294,58 @@
         <h2>Technologies Used</h2>
     </div>
 
-    <div class="card1"></div>
-    <div class="card2"></div>
-    <div class="card3"></div>
-    <div class="card4"></div>
+    <div class="card">
+        <div class="image"><img src="../img/html.png" alt="" style="height: 180px"></div>
+
+        <h3 style="text-align: center;margin-top: 39px;margin-bottom:10px;">Introduction to HTML</h3>
+
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut, ullam obcaecati, explicabo ex aliquam quis
+            nostrum quibusdam voluptatem aperiam minima recusandae ducimus consequatur.
+        </p>
+
+        <button class="btn"><a href="../Assignment-5/html.html">Read More</a></button>
+    </div>
+    
+    
+    <div class="card">
+        <div class="image"><img src="../img/css.png" alt="" style="height: 180px"></div>
+
+        <h3 style="text-align: center;margin-top: 39px;margin-bottom:10px;">Introduction to CSS</h3>
+
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut, ullam obcaecati, explicabo ex aliquam quis
+            nostrum quibusdam voluptatem aperiam minima recusandae ducimus consequatur.
+        </p>
+
+        <button class="btn"><a href="../Assignment-5/css.html">Read More</a></button>
+    </div>
+    
+    <div class="card">
+        <div class="image"><img src="../img/js.png" alt="" style="height: 180px;width:263px;border-radius:10px;"></div>
+
+        <h3 style="text-align: center;margin-top: 39px;margin-bottom:10px;">Introduction to JavaScript</h3>
+
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut, ullam obcaecati, explicabo ex aliquam quis
+            nostrum quibusdam voluptatem aperiam minima recusandae ducimus consequatur.
+        </p>
+
+        <button class="btn"><a href="../Assignment-5/js.html">Read More</a></button>
+    </div>
+    
+    <div class="card">
+        <div class="image"><img src="../img/bootstrap.png" alt="" style="height: 180px"></div>
+
+        <h3 style="text-align: center;margin-top: 39px;margin-bottom:10px;">Introduction to Bootstrap</h3>
+
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut, ullam obcaecati, explicabo ex aliquam quis
+            nostrum quibusdam voluptatem aperiam minima recusandae ducimus consequatur.
+        </p>
+
+        <button class="btn"><a href="../Assignment-5/bootstrap.html">Read More</a></button>
+    </div>
 
     <div class="sec4">
         <h2>Contact</h2>
