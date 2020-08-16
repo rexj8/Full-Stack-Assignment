@@ -29,14 +29,25 @@
             top:-10px;
         }
 
-        .hdr>btn{
+        .hdr>a>btn{
             display:inline-block;
             height:50%;
             width:10%;
             background: grey;
+            color:rgb(255, 255, 255);
+            margin-top:1%;
+            margin-left:105px;
+            text-decoration: none;
+        }
+
+        .hdr>btn:hover{
+            height:50%;
+            width:10%;
+            background: rgb(255, 255, 255);
             color:black;
             margin-top:1%;
             margin-left:105px;
+            text-decoration: none;
         }
 
         .hdr>btn>h3{
@@ -279,18 +290,18 @@
 
 <body>
     <header class="hdr">
-        <btn class="home"><h2>Home</h2></btn>
-        <btn class="about"><h2>About Me</h2></btn>
-        <btn class="team"><h2>Team</h2></btn>
-        <btn class="tech"><h2>Technology</h2></btn>
-        <btn class="contact"><h2>Contact Me</btn>
+        <a href="#"><btn class="home"><h2>Home</h2></btn></a>
+        <a href="#about"><btn class="about"><h2>About Me</h2></btn></a>
+        <a href="#team"><btn class="team"><h2>Team</h2></btn></a>
+        <a href="#tech"><btn class="tech"><h2>Technology</h2></btn></a>
+        <a href="#contact"><btn class="contact"><h2>Contact Me</h2></btn></a>
     </header>
 
     <div class="bnr">
         <h3>Practical-8</h3>
     </div>
 
-    <div class="sec1">
+    <div class="sec1" id="team">
         <h2>Team Members</h2>
     </div>
 
@@ -299,7 +310,7 @@
     <div class="person_img3"></div>
     <div class="person_img4"></div>
 
-    <div class="sec2">
+    <div class="sec2" id="about">
         <h2>About Us</h2>
     </div>
 
@@ -314,7 +325,7 @@
         <div class="artical3"><h2>Project-3</h2></div>
     </div>
 
-    <div class="sec3">
+    <div class="sec3" id="tech">
         <h2>Technologies Used</h2>
     </div>
 
@@ -371,7 +382,7 @@
         <button class="btn"><a href="../Assignment-5/bootstrap.html">Read More</a></button>
     </div>
 
-    <div class="sec4">
+    <div class="sec4" id="contact">
         <h2>Contact</h2>
     </div>
 
