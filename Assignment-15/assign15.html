@@ -30,7 +30,7 @@
             position:relative;
             left:49%;
         }
-        .count{
+        #count{
             font-size:60px;
             color:yellow;
             position:relative;
@@ -41,11 +41,14 @@
 <body>
     <h1>Counter</h1>
     <input type="button" onclick="dec()" value="-" id="dec-button">
-    <span class="count">0</span>
+    <span id="count">0</span>
     <input type="button" onclick="inc()" value="+" id="inc-button">
 
     <script>
-        document.getElementById("dec-button")
+        function inc(){
+            var n = parseInt(document.getElementById("count").value);
+            document.getElementById("inc-button").onclick = 
+        } 
     </script>
 </body>
 </html>
