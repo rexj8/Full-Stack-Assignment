@@ -47,7 +47,11 @@
     <script>
         function inc(){
             var n = parseInt(document.getElementById("count").value);
-            document.getElementById("inc-button").onclick = 
+            document.getElementById("inc-button").onclick = function(){incInnerFunc(n)};
+        }
+
+        function incInnerFunc(n){
+            document.getElementById("count").innerHTML = n+1;
         } 
     </script>
 </body>
