@@ -67,9 +67,20 @@
         // } 
 
         const counterBtn = document.querySelectorAll('.counterBtn');
+            let count=0;
 
-        counterBtn.forEach(btn)=>{
-            
+        counterBtn.forEach(btn) => {
+            btn.addEventListner('click',()=>{
+                if(btn.classList.contains('dec-button')){
+                    count--;
+                }
+                else if(btn.classList.contains('dec-button')){
+                    
+                }
+
+
+            });
+
         }
     </script>
 </body>
