@@ -46,7 +46,8 @@
 
     <script>
         function inc(){
-            count=0
+            // count=0
+            var count=parseInt(document.getElementById("count").value);
             document.getElementById("inc-button").onclick = function(){incInnerFunc(count)};
         }
 
