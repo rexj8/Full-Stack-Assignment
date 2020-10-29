@@ -51,16 +51,18 @@
         }
 
         function incInnerFunc(n){
-            document.getElementById("count").innerHTML = n+1;
+            n+=1;
+            document.getElementById("count").innerHTML = n;
         } 
         
         function dec(){
-            var n = parseInt(document.getElementById("count").value);
-            document.getElementById("dec-button").onclick = function(){decInnerFunc(n)};
+            count=0;
+            document.getElementById("dec-button").onclick = function(){decInnerFunc(count)};
         }
 
         function decInnerFunc(n){
-            document.getElementById("count").innerHTML = n-1;
+            n-=1;
+            document.getElementById("count").innerHTML = n;
         } 
     </script>
 </body>
