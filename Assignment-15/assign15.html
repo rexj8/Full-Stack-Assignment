@@ -14,7 +14,7 @@
             color:white;
             font-size: 4rem;
         }
-        #dec-button{
+        .dec-button{
             height:50px;
             width:50px;
             font-size: 40px;
@@ -22,7 +22,7 @@
             position:relative;
             left:42%;
         }
-        #inc-button{
+        .inc-button{
             height:50px;
             width:50px;
             font-size: 40px;
@@ -40,31 +40,37 @@
 </head>
 <body>
     <h1>Counter</h1>
-    <input type="button" onclick="dec()" value="-" id="dec-button">
+    <input type="button" onclick="dec()" value="-" class="counterBtn dec-button">
     <span id="count">0</span>
-    <input type="button" onclick="inc()" value="+" id="inc-button">
+    <input type="button" onclick="inc()" value="+" class="counterBtn inc-button">
 
     <script>
-        function inc(){
-            // count=0
-            var count=parseInt(document.getElementById("count").value);
-            document.getElementById("inc-button").onclick = function(){incInnerFunc(count)};
-        }
+        // function inc(){
+        //     // count=0
+        //     var count=parseInt(document.getElementById("count").value);
+        //     document.getElementById("inc-button").onclick = function(){incInnerFunc(count)};
+        // }
 
-        function incInnerFunc(n){
-            n+=1;
-            document.getElementById("count").innerHTML = n;
-        } 
+        // function incInnerFunc(n){
+        //     n+=1;
+        //     document.getElementById("count").value = n;
+        // } 
         
-        function dec(){
-            count=0;
-            document.getElementById("dec-button").onclick = function(){decInnerFunc(count)};
-        }
+        // function dec(){
+        //     count=0;
+        //     document.getElementById("dec-button").onclick = function(){decInnerFunc(count)};
+        // }
 
-        function decInnerFunc(n){
-            n-=1;
-            document.getElementById("count").innerHTML = n;
-        } 
+        // function decInnerFunc(n){
+        //     n-=1;
+        //     document.getElementById("count").innerHTML = n;
+        // } 
+
+        const counterBtn = document.querySelectorAll('.counterBtn');
+
+        counterBtn.forEach(btn)=>{
+            
+        }
     </script>
 </body>
 </html>
