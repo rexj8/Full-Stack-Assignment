@@ -46,12 +46,21 @@
 
     <script>
         function inc(){
-            var n = parseInt(document.getElementById("count").value);
-            document.getElementById("inc-button").onclick = function(){incInnerFunc(n)};
+            count=0
+            document.getElementById("inc-button").onclick = function(){incInnerFunc(count)};
         }
 
         function incInnerFunc(n){
             document.getElementById("count").innerHTML = n+1;
+        } 
+        
+        function dec(){
+            var n = parseInt(document.getElementById("count").value);
+            document.getElementById("dec-button").onclick = function(){decInnerFunc(n)};
+        }
+
+        function decInnerFunc(n){
+            document.getElementById("count").innerHTML = n-1;
         } 
     </script>
 </body>
